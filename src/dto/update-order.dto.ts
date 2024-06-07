@@ -1,4 +1,5 @@
 import { InputType, Field } from '@nestjs/graphql';
+import { LineItemDto } from './create-order.dto';
 
 @InputType()
 export class UpdateOrderDto {

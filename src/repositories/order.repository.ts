@@ -17,6 +17,10 @@ export class OrderRepository implements IOrderRepository {
     return this.orderModel.findById(id).exec();
   }
 
+  async findAll(): Promise<Order[]> {
+    return this.orderModel.find().exec();
+  }
+
   async update(id: string, order: Partial<Order>): Promise<Order> {
     return this.orderModel.findByIdAndUpdate(id, order, { new: true }).exec();
   }

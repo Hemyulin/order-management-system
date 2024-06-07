@@ -82,7 +82,6 @@ export class OrderService {
     return this.orderRepository.update(id, order);
   }
 
-  // Add the findAll method
   async findAll(): Promise<Order[]> {
     return this.orderRepository.findAll();
   }
