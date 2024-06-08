@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Order {
+  id: Int!
+  currentState: String!
+  customer: Int!
+  lineItems: String!
+}
+
+type Query {
+  orders: [Order!]!
+}
