@@ -1,0 +1,11 @@
+type Query {
+  jobs: [Job!]
+}
+
+type Order {
+  id: ID!
+  costumer: ID!
+  lineItems: [String]
+  createdAt: String
+  lastUpdated: String
+}
