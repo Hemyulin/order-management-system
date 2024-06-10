@@ -1,10 +1,10 @@
 // user.service.ts
 import { Model, FilterQuery, CreateQuery } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
-import { User } from './user.schema';
+import { Order } from './order.schema';
 
 @Injectable()
-export class UserService {
+export class OrderService {
   constructor(
     @Inject('USER_MODEL')
     private userModel: Model<User>,
